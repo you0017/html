@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>js</title>
+	</head>
+	<script type="text/javascript">
+		//一 变量
+		var age = 20;
+		//alert("年龄"+age);
+		console.log("年龄"+age);
+		//0/null/undifined/false/空字符串  if都为false
+		
+		//二 if语句
+		if(0){
+			console.log("if");
+		}else{
+			console.log("else");
+		}
+		
+		//三 数组
+		var arr = new Array();
+		//添加值
+		//1.方式一
+		arr[0] = 0;
+		arr[1] = 1;
+		//2.方式二
+		arr.push("张三");
+		arr.push("李四");
+		
+		//3.删除值 arr.splice(要删除值得下标，从这个开始删几个)
+		arr.splice(2,1);
+		
+		//4.修改值 arr.splice(要修改值得下标，修改几个，新值)
+		arr.splice(0,1,"王五");
+		
+		//5.数组长度
+		var length = arr.length;
+		console.log("数组长度:" + length);
+		//6.循环输出
+		for(var i=0;i<length;i++)
+			console.log(arr[i]);
+			
+			
+		//7.通过js给网页动态添加数据
+		document.write("123");
+		
+		//四 字符串的使用
+		var str = "张三丰_张无忌";
+		//1.字符串长度
+		console.log("字符串长度：" + str.length);
+		//2.获取字符串某个字符
+		var char = str.charAt(3);
+		console.log("第四个字符：" + char);
+		//3.判断字符是否存在于字符串中
+		//	存在返回第一次出现的下标，不存在返回-1
+		var index1 = str.indexOf("张");
+		console.log("第一次出现下标是：" + index1);
+		// .判断字符是否存在于字符串中
+		//	存在返回最后一次出现的下标，不存在返回-1
+		var index2 = str.lastIndexOf("张");
+		console.log("最后一次下标是：" + index2);
+		
+		//4.字符串截取substring(开始下标，结束下标);
+		//				substring(开始下标);
+		var str1 = str.substring(0,3);
+		console.log("截取的字符串是："+str1);
+		var str2 = str.substring(3);
+		console.log(str2);
+		
+		//5.字符串分割split("分隔符")
+		var str3 = str.split("_");
+		for(var i=0;i<str3.length;i++){
+			console.log("分割字符："+str3[i]);
+		}
+		
+		//6.字符串替换replace(老字符串,新字符串)
+		var result1 = str.replace("_","");
+		console.log("替换之后的字符串："+result1);
+		
+		//五 输入
+		var name = prompt("请输入名字");
+		console.log("你的名字是：" + name );
+	</script>
+	<body>
+	</body>
+</html>

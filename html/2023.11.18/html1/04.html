@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单元素（可以和我们互动的标签</title>
+	</head>
+	<body>
+		<form action="www.baidu.com">
+			文本框：<input type="text" placeholder="请输入"/><br>
+			密码框：<input type="password" placeholder="请输入"/><br>
+			单选按钮：
+			<!-- 1.单选按钮要有单选效果，必须指定相同的name -->
+			<!-- 1.单选按钮是否选中有checked决定 -->
+			<input id="sex" type="radio" name="sex"/><label for="sex">男</label>
+			<input id="sex1" type="radio" name="sex"  checked/><label for="sex1">女</label>
+			<input id="sex2" type="radio" name="sex"/><label for="sex2">保密</label>
+			<br>
+			复选框：
+			<input id="兴趣1"type="checkbox" name="xingqu"/><label for="兴趣1">打球</label>
+			<input id="兴趣2"type="checkbox" name="xingqu"/><label for="兴趣2">学习</label>
+			<input id="兴趣3"type="checkbox" name="xingqu" checked/><label for="兴趣3" >睡觉</label>
+			<input id="兴趣4"type="checkbox" name="xingqu"/><label for="兴趣4">游戏</label>
+			<br>
+			下拉框：
+			<!-- 是否选择由selected决定 -->
+			<select>
+				<option>--请选择学历--</option>
+				<option>大专</option>
+				<option selected>研究生</option>
+				<option>本科</option>
+			</select>
+			<br>
+			<textarea placeholder="文本域"></textarea><br>
+			<input type="file"><br>
+			<input type="button" value="普通按钮">
+			<input type="submit" value="提交按钮"/>
+			<input type="reset" value="重置按钮"/>
+		</form>
+	</body>
+</html>

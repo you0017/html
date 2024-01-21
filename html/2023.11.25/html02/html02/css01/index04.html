@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 边框样式 -->
+		<div class="mydiv">
+			<div class="mydiv2">
+				<div class="mydiv3"></div>
+			</div>
+		</div>
+	</body>
+</html>
+<style>
+	.mydiv{
+		width: 500px;
+		height: 500px;
+		/* 边框类型：solid-实线 dash-虚线 */
+		/* border-right-style: dashed;
+		border-right-width: 2px;
+		border-right-color: blue; */
+		/* 四个边框分开写 */
+		/* border-right: solid 3px yellow;
+		border-left: solid 3px red;
+		border-top: dashed 3px blue;
+		border-bottom: dashed 3px orange; */
+		
+		/* 四个边框一样 */
+		border: solid 2px pink;
+	}
+	
+	.mydiv2{
+		width: 300px;
+		height: 300px;
+		background-color: blue;
+		/* margin:外间距 padding:内间距 */
+		/* 设置和第一个div的外间距 */
+		margin-top: 20px;
+		margin-left: 20px;
+		/* 设置和第三个div的内间距 */
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+	
+	.mydiv3{
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+	}
+</style>

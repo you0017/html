@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script type="text/javascript">
+		var str="America,Greece,Britain,Canada,China,Egypt";
+		document.write("在以下字符中：" + "<br><br>");
+		var str1 = str.split(",");
+		var sum=0;
+		for(var i=0;i<str1.length;i++){
+			document.write(str1[i] + "<br><br>");
+			if(str1[i].indexOf("a") != -1){
+				sum++;
+				continue;
+			}
+			if (str[i].indexOf("A") != -1){
+				sum++;
+				continue;
+			}
+		}
+		var a=0;
+		var A=0;
+		for(var i=0;i<str.length;i++){
+			if(str.substring(i,i+1) == "a"){
+				a++;
+			}else if (str.substring(i,i+1) == "A"){
+				A++;
+			}
+		}
+		document.write("A有" + A+ "个" + "<br><br>");
+		document.write("a有" + a+ "个" + "<br><br>");
+		document.write("有" + sum +"个字符有A或a")
+	</script>
+	<body>
+	</body>
+</html>

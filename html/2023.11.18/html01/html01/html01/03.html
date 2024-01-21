@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>table表格的使用</title>
+	</head>
+	<body>
+		<!-- table的第一种写法：都写tr -->
+		<!-- border：指定边框大小  -->
+		<!-- width：指定表格宽度 -->
+		<!-- text-align: center;表格中文本居中 -->
+		<!-- align：表格对其方式，center为居中 -->
+		<!-- cellspacing：指定单元格和表格边框之间的间距(外间距) -->
+		<!-- cellpadding：指定单元格中内容和单元格边框之间的间距（内间距） -->
+		<table border="1" width="500" 
+			style="text-align: center;" 
+			cellspacing="0" cellpadding="5"
+			align="center">
+			<!-- tr表示行，td表示行中的单元格 -->
+			<tr>
+				<td>名字</td>
+				<td>性别</td>
+				<td>年龄</td>
+				<td>技能</td>
+			</tr>
+			<tr>
+				<td>杨过</td>
+				<td>男</td>
+				<td>28</td>
+				<td>黯然销魂掌</td>
+			</tr>
+			<tr>
+				<td>黄蓉</td>
+				<td>女</td>
+				<td>44</td>
+				<td>打狗棒</td>
+			</tr>
+			<tr>
+				<td>周伯通</td>
+				<td>男</td>
+				<td>55</td>
+				<td>左右互搏</td>
+			</tr>
+		</table><br />
+		
+		
+		<!-- table的第二种写法：分为表头和表中数据-->
+		<table border="1" width="500" style="text-align: center;"
+		align="center" cellspacing="0" cellpadding="5">
+			<!-- 表头 -->
+			<thead>
+				<!-- th为表头中的每个单元格 -->
+				<th>名字</th>
+				<th>性别</th>
+				<th>年龄</th>
+				<th>技能</th>
+			</thead>
+			<!-- 表中的数据 -->
+			<tbody>
+				<tr>
+					<td>杨过</td>
+					<td>男</td>
+					<!-- rowspan="2"表示当前单元格跨2行 -->
+					<td rowspan="2">28</td>
+					<td>黯然销魂掌</td>
+				</tr>
+				<tr>
+					<td>黄蓉</td>
+					<td>女</td>
+					<td>打狗棒</td>
+				</tr>
+				<tr>
+					<!-- colspan="2"表示当前单元格跨2列 -->
+					<td colspan="2">周伯通</td>
+					<td>55</td>
+					<td>左右互搏</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
